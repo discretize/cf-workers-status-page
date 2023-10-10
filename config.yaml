@@ -31,6 +31,14 @@ monitors:
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
+  - id: discretize-docs # unique identifier
+    name: discretize-docs.pages.dev
+    description: 'Docs website' # default=empty
+    url: 'https://discretize-docs.pages.dev' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
   - id: discretize-optimizer # unique identifier
     name: optimizer.discretize.eu
     description: 'Gear Optimizer' # default=empty
@@ -46,7 +54,7 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: true # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true
 
 
 
